@@ -1,5 +1,6 @@
-import { Flex } from "@chakra-ui/layout";
+import { Flex, Stack } from "@chakra-ui/react";
 import { Header } from "../components/Header";
+import { Panel } from "../components/Panel";
 
 export default function Home() {
   return (
@@ -8,8 +9,11 @@ export default function Home() {
       h="100vh"
       maxW="1280px" 
       mx="auto"
-    >
-      <Header />
+    > 
+      <Stack w="100%">
+        <Header />
+        <Panel />
+      </Stack>
     </Flex>
   )
 }
