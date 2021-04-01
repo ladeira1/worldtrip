@@ -11,12 +11,13 @@ export function Panel() {
       justify="space-around"
     > 
       <Stack>
-        <Text fontSize="2rem" fontWeight="medium" color="white.800">
+        <Text as="h2" fontSize="2rem" fontWeight="medium" color="white.800">
           5 Continentes, <br /> 
           infinitas possibilidades.
         </Text> 
-        <Text fontSize="1rem" color="gray.100">
-          Chegou a hora de tirar do papel a viagem que você sempre sonhou.
+        <Text as="span" fontSize="1rem" color="gray.100">
+          Chegou a hora de tirar do papel a viagem que você <br />
+          sempre sonhou.
         </Text>
       </Stack>
       <Image src="/icons/airplane.svg" alt="Airplane" mt="24" />

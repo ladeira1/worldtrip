@@ -1,4 +1,5 @@
 import { Flex, Stack } from "@chakra-ui/react";
+import { Categories } from "../components/Categories";
 import { Header } from "../components/Header";
 import { Panel } from "../components/Panel";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Stack w="100%">
         <Header />
         <Panel />
+        <Categories />
       </Stack>
     </Flex>
   )
