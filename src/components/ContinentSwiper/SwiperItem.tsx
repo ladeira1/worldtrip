@@ -1,4 +1,5 @@
 import { Center, Stack, Text } from '@chakra-ui/react'
+import { useRouter } from 'next/dist/client/router'
 
 interface SwiperItemProps {
   name: string
@@ -7,6 +8,12 @@ interface SwiperItemProps {
 }
 
 export function SwiperItem({ name, description, imageUrl }: SwiperItemProps) {
+  const router = useRouter()
+
+  function handleNavigateToPage() {
+    router.push(`/continents/${name}`)
+  }
+
   return (
     <Center 
       w="100%" 
@@ -15,6 +22,7 @@ export function SwiperItem({ name, description, imageUrl }: SwiperItemProps) {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       align="center" 
+      onClick={handleNavigateToPage}
     >
       <Stack>
         <Text as="h2" fontSize="1.75rem" fontWeight="bold" color="white.800">
