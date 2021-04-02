@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Flex, Image, Stack, Text } from "@chakra-ui/react";
 
 export function Panel() {
   return (
@@ -6,7 +6,7 @@ export function Panel() {
       as="section"
       bgImage="url('/background.svg')" 
       w="100%" 
-      h="80"
+      h="60"
       align="center"
       justify="space-around"
     > 
@@ -20,7 +20,7 @@ export function Panel() {
           sempre sonhou.
         </Text>
       </Stack>
-      <Image src="/icons/airplane.svg" alt="Airplane" mt="24" />
+      <Image src="/icons/airplane.svg" alt="Airplane" mt="10" />
     </Flex>
   )
 }
